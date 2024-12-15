@@ -1,18 +1,18 @@
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.Test;
+import static org.junit.Assert.assertTrue;
 
 public class StringUtilsTest {
     @Test
     public void testContainsSubstring() {
         String mainString = "Hello, Jenkins!";
         String subString = "Jenkins";
-        assertTrue(mainString.contains(subString), "Substring test failed");
+        assertTrue("Substring test failed", mainString.contains(subString));
     }
 
     @Test
     public void testStartsWith() {
         String mainString = "Hello, Jenkins!";
         String prefix = "Hello";
-        assertTrue(mainString.startsWith(prefix), "StartsWith test failed");
+        assertTrue("StartsWith test failed", mainString.startsWith(prefix));
     }
 }

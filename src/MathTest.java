@@ -1,7 +1,5 @@
-import org.junit.jupiter.api.Test;
-
+import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MathTest {
     @Test
@@ -9,7 +7,7 @@ public class MathTest {
         int a = 5;
         int b = 10;
         int result = a + b;
-        assertEquals(15, result, "Addition test failed");
+        assertEquals("Addition test failed", 15, result);
     }
 
     @Test
@@ -17,6 +15,6 @@ public class MathTest {
         int a = 10;
         int b = 5;
         int result = a - b;
-        assertEquals(5, result, "Subtraction test failed");
+        assertEquals("Subtraction test failed", 5, result);
     }
 }
